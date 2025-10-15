@@ -1,1 +1,7 @@
-<p>home works!</p>
+<p appAttibuteDirective>home works!</p>
+<h1 *appUnless="false"> {{'this is visible' | capitalize}} </h1>
+<p *ngIf="false"> Current Status: {{status[currentStatus]}} </p>
+<!-- <p *ngIf="user; else loginPrompt">Hello, {{ user.name }}</p>
+<ng-template #loginPrompt>
+  <p>Please log in</p>
+</ng-template> -->
