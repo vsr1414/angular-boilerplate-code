@@ -1,0 +1,10 @@
+<section class="cards">
+  <h2>Cars</h2>
+  <div class="card-list">
+    <div class="card" *ngFor="let car of cars">
+      <h3>{{ car.name }}</h3>
+      <p>{{ car.price }}</p>
+      <button class="btn" (click)="addToCart(car)">Add to cart</button>
+    </div>
+  </div>
+</section>
