@@ -5,3 +5,16 @@
 <ng-template #loginPrompt>
   <p>Please log in</p>
 </ng-template> -->
+<h1 *showIfTrue="true">testing show if true directive</h1>
+<h1 *showIfTrue="false">testing show if true directive</h1>
+
+
+
+<h1>dropdown</h1>
+<p>{{ searchText }}</p>
+<input type="text" [(ngModel)]="searchText" (input)="onSearchItem()" />
+<ul *ngIf="searchText" (click)="selectedItem($event)">
+  @for (item of filteredDropdownElements; track item.id) {
+  <li>{{ item.name }}</li>
+  }
+</ul>
